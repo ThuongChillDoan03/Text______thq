@@ -500,7 +500,7 @@ def stepEnv(action,env_state):
             env_state[227+action] = 1
             env_state[(535+(action-360)*4):(535+(action-359)*4)] = 0
             for jx in range(4):
-               env_state[109+Player_ID*52+jx*13+(action-360)]
+               env_state[109+Player_ID*52+jx*13+(action-360)] = 0
 
          arr_card_player = env_state[(109+Player_ID*52):(109+(Player_ID+1)*52)]
          point_player = Calculate(arr_card_player)
